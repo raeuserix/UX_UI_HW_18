@@ -54,7 +54,12 @@ nav {
 }
 
 
-li:hover {
+.inline-block li:hover {
+    font-weight:bold;
+    scale:1.05;
+}
+
+footer li:hover {
     font-weight:bold;
     scale:1.05;
 }
@@ -187,7 +192,8 @@ button {
 }
 
 .mySkills h1,
-.myWork h1 {
+.myWork h1,
+.platformsClass h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #FFFFFF;
@@ -196,7 +202,7 @@ button {
 
 }
 
-/*}
+
 .headers{
    display:flex;
    flex-direction: column;
@@ -206,42 +212,44 @@ button {
     padding:10px;
     width:80%;
     margin:0 auto;
-}*/
+}
 
-/*.skillInfo {
+.skillInfo {
     width: 100%;
-} */
-/* .hr {
+} 
+.hr {
    margin:0 auto;
     font-family: Arial, Helvetica, sans-serif;
     background-color:#FFFFFF;
-} */
+} 
 
-/* hr {
+hr {
     border: none;
     height: 3px;
     border-top:4px solid black;
     border-bottom:2px solid black;
     margin-top:0;
-} */
+}
 
-/* .platformsClass{
-    margin-top:25px;
-    width:85%;
-    margin-left:auto;
-    margin-right:auto;
-    padding-left:15px;
-    padding-right:15px;
-} */
-/* .flexContainerPlatforms {
+.platformsClass{
+    margin-top: 25px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+} 
+.flexContainerPlatforms {
     display:flex;
-    flex-direction:row; */
-/* justify-content: space-between; */
-/* margin:0 auto;
+    flex-direction:row;
+justify-content: space-evenly; 
+margin:0 auto; 
     font-family: Arial, Helvetica, sans-serif;
     background-color:#FFFFFF;
-} */
-/* .centeredH3Headers1 {
+    /* padding-top:30px;
+    padding-bottom:40px; */
+}
+.centeredH3Headers1 {
     text-align: center;
     justify-content: center;
     margin-top:3px;
@@ -254,22 +262,30 @@ button {
 
 .skillInfo {
     margin-top:10px;
-} */
+}
 
-/* .platformType{
-    width:25%;
-} */
+.platformType{
+    padding-left:10px;
+    padding-right:10px;
+}
 
-/* .platformUL {
-    display:inline-block;
-    justify-content: left;
+.platformUL {
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
     margin-top:5px;
+    padding-bottom:20px;
+    padding-left:0;
 
 
 }
+
+
 .platformType li {
-    justify-content:left ;
-} */
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
 
 
 /*My Work*/
@@ -304,6 +320,11 @@ button {
 
 
 }
+
+.platforms h1 {
+    background-color:white;
+}
+
 
 .workImage {
     display:flex;
@@ -408,6 +429,7 @@ footer li {
     width:100%;
     padding:0px;
    }
+
    
     .containerGrid {
         flex-direction:column;
@@ -438,9 +460,33 @@ footer li {
     .flexContainerPlatforms {
         flex-direction: column;
         width: 100%;
-        padding: 0px;
+        padding-top: 10px;
+        /* align-content: center;
+        justify-content:center;
+        padding-bottom:10px; */
 
     }
+
+
+    /* .platformUL {
+        align-content: center;
+        width:250px;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-end;
+    } */
+
+    .platformType {
+        padding-bottom:15px;
+
+    }
+
+    .platformType li {
+        justify-content: center;
+        text-align: left;
+        padding-left:110px;
+    }
+
 
     .gridContainerWork {
        margin:auto;
@@ -450,6 +496,10 @@ footer li {
        /* grid-template-rows:1fr;
        grid-template-areas: "workImage"
        "workInfo"; */
+    }
+
+    .workInfo {
+        padding-right: 0;
     }
 
 
